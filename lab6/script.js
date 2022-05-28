@@ -40,7 +40,7 @@ function on_finish_clicked()
     });
 	
     checked_answers[1] = amount == 2 && 2 == activated;
-    checked_answers[2] = document.getElementById("q3").value.toLowerCase() == "ссср"
+    checked_answers[2] = document.getElementById("q3").value.toLowerCase() == ""
     checked_answers[3] = document.getElementById("q4").value == "140"
 	
     answers5 = document.getElementsByName("q5")

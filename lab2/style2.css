@@ -1,0 +1,48 @@
+.title, .text {
+	margin: 0;
+}
+.title {
+  color: blue;
+}
+.text {
+  color: green;
+  text-indent: 1.5em;
+  font-size: 20px;
+}
+
+.text:first-line {
+  font-weight: bold;
+}
+
+.list-title {
+  color: green;
+  font-weight: normal;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.list {
+  list-style-type: square;
+  font-size: 20px;
+  font-weight: normal;
+  color: green; 
+  margin-left: 20px;
+  margin-top: 0;
+}
+
+.list-in-list {
+  list-style-type: upper-roman;
+  margin: 0% 2%;
+} 
+
+.element {
+  padding: 5px;
+}
+.mail-ref { 
+  text-decoration: none; 
+  margin-top: 50px;
+}
+
+.mail-ref:link {
+  color: pink;
+}

@@ -1,0 +1,19 @@
+div.question_answer_section{
+    border: ridge 7px Orange;
+    background-color: DarkTurquoise;
+    display: block;
+    margin: 5px;
+}
+
+div.question_answer_section h1{
+    margin: 8px;
+	font-size: 20px;
+}
+
+div.answer_section{
+    display: inline-flex;
+}
+
+input{
+    margin: 5px 0px 5px 15px;
+}

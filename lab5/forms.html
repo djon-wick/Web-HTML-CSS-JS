@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>5 lab</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<!--
+<div style="
+    position: absolute;
+    width:100%;
+    height:100%;
+    background:#000;
+    opacity:0.5;
+"></div>
+!-->
+<body>
+
+  <nav style="text-align:center;">
+    <a href="../lab6/test.html">Тестирование</a>
+  </nav>
+  <div id="abra" class="modal" style="
+	position: fixed;
+  	background:#000;
+    z-index: 0;
+	margin:0%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+	opacity:0.5;
+  ">
+  </div>
+  <div id="modal" class="modal">	
+		<div class="modal-header">
+			<h1>Убедитесь в правильности введенных данных </h1>
+		</div>
+		<div id="modal-body"></div>
+		<div class="modal-footer">Вы уверенны?</div>
+		<center><div class="close"><input type="button" style="width:70%" value="Подтвердить" onclick="on_close()"></div></center>
+	</div>
+	<form>
+		<fieldset>
+			<legend>Личные данные</legend>
+			<main>
+				<label for="name">Имя</label>
+				<input id="name" type="text" name="name" placeholder="Имя" autofocus required>
+
+				<label for="email">Email</label>
+				<input id="email" type="email" name="email" placeholder="example@email.com" required>
+
+				<label for="homepage">Домашняя страница</label>
+				<input id="homepage" type="txt" name="homepage"  placeholder="www.example.com"
+					required>
+
+				<label for="date">Дата рождения</label>
+				<input id="date" type="date" name="date" required>
+			</main>
+		</fieldset>
+
+		<fieldset>
+			<legend>Интересы</legend>
+			<p><input type="checkbox" id="musicbox" oninput="shadow_open_close('musicbox', 'musicdiv')"> Музыка</p>
+			<div class="shadow" id="musicdiv">
+				<fieldset>
+					<p><input type="radio" name="music" value="Музыка" checked>Да</p>
+					<p><input type="radio" name="music" value="Не музыка">Нет</p>
+				</fieldset>
+			</div>
+
+			<p><input type="checkbox" id="bookbox" oninput="shadow_open_close('bookbox', 'bookdiv')"> Книги</p>
+			<div class="shadow" id="bookdiv">
+				<fieldset>
+					<p><input type="radio" name="book" value="Книги" checked>Да</p>
+					<p><input type="radio" name="book" value="Не книги">Нет</p>
+				</fieldset>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Шрифт письма</legend>
+
+			<div id="example">Примерный текст</div>
+
+			<label for="font-size">Размер шрифта</label>
+			<input id="size" name="font-size" type="range" min="10" max="60" value="20" oninput="on_size_changed()">
+
+			<label for="font-color">Цвет текста</label>
+			<input id="color" name="font-color" type="color" value="#000000" oninput="on_color_changed()">
+		</fieldset>
+		<div class="button-container">
+			<input type="submit" id="submit">
+		</div>
+	</form>
+	<script src="script.js"></script>
+</body>
+
+</html>

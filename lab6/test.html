@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="question_answer_section">
+        <h1>Самая широкая река в мире</h1>
+        <div class="answer_section">
+            <p><input type="radio" name="q1" value="false">Нил</p>
+            <p><input type="radio" name="q1" value="true">Ла-Плата</p>
+            <p><input type="radio" name="q1" value="false">Амазонка</p>
+        </div>
+    </div>
+
+    <div class="question_answer_section">
+        <h1>У каких политиков инициалы Фамилия В.В.</h1>
+        <div class="answer_section">
+            <p><input type="checkbox" name="q2" value="true">Путин</p>
+            <p><input type="checkbox" name="q2" value="false">Зюганов</p>
+            <p><input type="checkbox" name="q2" value="true">Жириновский</p>
+        </div>
+    </div>
+
+    <div class="question_answer_section">
+        <h1>Второе государство, напавшее на Польшу почти одновременно с Германией в 1939 году</h1>
+        <div class="answer_section">
+            <input id="q3">
+        </div>
+    </div>
+
+    <div class="question_answer_section">
+        <h1>7 * 20 = ?</h1>
+        <div class="answer_section">
+            <input type="number" id="q4">
+        </div>
+    </div>
+
+    <div class="question_answer_section">
+        <h1>Соотнесите название и автора</h1>
+        <div class="answer_section" style="display: block;"> 
+            <p>Мцыри
+                <select name="q5">
+                    <option value="false" >Булгаков</option>
+                    <option value="false" >Пушкин</option>
+                    <option value="true" >Лермонтов</option>
+                </select>
+            </p>
+            <p>Овод
+                <select name="q5">
+                    <option value="true" >Войнич</option>
+                    <option value="false" >Зощенко</option>
+                    <option value="false" >Бунин</option>
+                </select>
+            </p>
+            <p>Граф Монте-Кристо
+                <select name="q5">
+                    <option value="false" >Достоевский</option>
+                    <option value="true" >Дюма</option>
+                    <option value="false" >Ахматова</option>
+                </select>
+            </p>
+        </div>
+    </div>
+
+    <button onclick="on_finish_clicked()" style="width:100%;height:2em;">Подтвердить</button>
+</body>
+
+</html>

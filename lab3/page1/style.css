@@ -1,0 +1,106 @@
+body, h1, h2, h3, h4, p, a{
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  flex-grow: 1;
+  display: flex;
+  background: #b0e7bb;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-with-title{
+	margin: 0;
+}
+
+.logo{
+	width: 130px;
+	padding: 5px;
+}
+
+.title{
+	margin: 5px 0 10px 10px;
+}
+
+.header-title{
+	font: bold 1.8em sans-serif;
+	color: #0f260d;
+	text-decoration: underline;
+	margin: auto;
+}
+
+.nav-panel{
+	flex-grow: 1;
+	background: #edf096;
+}
+
+.nav-list{
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-list .nav-item{
+	margin-right: 30px;
+}
+
+main{
+	display: flex;
+	flex-grow: 4;
+	flex-direction: column;
+	align-items: baseline;
+}
+
+.main-title{
+	font: bold 1.6em sans-serif;
+	margin: 30px 0 10px 30px;
+}
+
+main > .text{
+	margin: 0 30px 10px 30px;
+}
+
+.text{
+	text-align: justify;
+	text-indent: 1.5em;
+	margin-bottom: 20px;
+}
+
+.content{
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	border: 1px solid #212f27;
+	background: #788473;
+	margin: 0 30px 30px 30px;
+	padding: 30px;
+}
+
+.content-title{
+	font: bold 1.4em sans-serif;
+	margin-bottom: 20px;
+}
+
+.footer{
+	flex-grow: 1;
+	background: #b0e7bb;
+	display: flex;
+	align-items: flex-end;
+}
+
+.footer-mail{
+	font-style: italic;
+	margin: 0 0 10px 10px;
+}

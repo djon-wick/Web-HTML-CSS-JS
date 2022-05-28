@@ -1,0 +1,140 @@
+body, h1, h2, h3, h4, p, a{
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+	flex: 1;
+    display: flex;
+    background: #e87d5c;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-title{
+	font: bold 1.8em sans-serif;
+	justify-content: center;
+	margin-left: 5%;
+}
+
+.main-content{
+	flex: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: #f7b7c3;
+}
+
+.left-aside{
+	border: 1px solid black;
+	padding: 30px;
+	background: #efb183;
+	flex-basis: 45%;
+}
+
+.nav-panel{
+	background: #d98855;
+}
+
+.nav-list{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	height: 40px;
+	
+}
+
+.nav-list > .nav-item{
+	padding: 15px;
+
+}
+
+.section, .right-aside{
+	padding: 10px;
+	border: 3px solid black;
+	margin-top: 30px;
+	background: lightgray;
+}
+
+.section > h1, .article-title, .right-aside > h1{
+	font: bold 1.4em sans-serif;
+	margin-bottom: 20px;
+}
+
+.left-aside > div {
+	font: bold 1.0em sans-serif;
+	margin-top: 30px;
+}
+
+article{
+	border: 3px solid black;
+	display: flex;
+	flex-direction: column;
+	background: #d78ff2;
+	flex-basis: 45%;
+
+}
+
+article > header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background: #f7c888;
+	margin-bottom: 30px;
+	height: 50px;
+	margin: 1px;
+}
+
+header > h1{
+	font: bold 1.6em sans-serif;
+}
+
+main {
+	padding: 20px;
+	border: 3px solid #ff0000;
+	margin: 10px 20px 10px;
+	background: #f0bfbf;
+}
+
+.picture-with-title{
+	margin: 20px 0;
+}
+.picture{
+	width: 150px;
+	padding: 5px;
+}
+.picture-title{
+	font-weight: bold;
+	margin-left: 60px;
+}
+
+
+.text{
+	text-align: justify;
+	text-indent: 1.5em;
+}
+
+.footer{
+	background: #cbaacc;
+	height: 50px;
+	margin: 1px;
+	display: flex;
+	align-items: flex-end;
+}
+
+.footer-mail{
+	font-style: italic;
+}

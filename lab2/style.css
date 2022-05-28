@@ -1,0 +1,134 @@
+body, h1, h2, h3, h4, p, a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+body {
+  font-family: Gill Sans, sans-serif;
+}
+
+.title {
+  font-family: DejaVu Sans Mono, monospace;
+  color:#4EB3FF; 
+  margin: 20px 0 0 20px;
+  font-size: 34px;
+
+}
+
+.std-p-title a {
+	color: rgba(174, 83, 173, .5);
+	font-size: 150%;
+}
+
+.text {
+  font-family: Palatino, URW Palladio L, serif;
+  text-indent: 1.5em;
+  text-align: justify;
+  font-size: 20px;
+  margin: 3% 5%;
+}
+
+.text + .text-too {
+  font-family: Palatino, URW Palladio L, serif;
+  text-indent: 1.5em;
+  text-align: justify;
+  color: lightgreen; 
+  font-size: 20px;
+  margin-left: 5%;
+}
+        
+.first-p {
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  text-shadow: 1px 1px 1px #000;
+  margin-left: 10%;
+  color: pink;
+}
+
+#europe {
+  font-weight: 100;
+  color: blue;
+}
+
+.std-p-title {
+  color:blue; 
+  text-align:center;
+  font-size: 26px;
+}
+
+.stylish-p-title {
+  color: violet;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a[target]:visited {
+  color: inherit;
+}
+
+.orange-space-text {
+  color: orange;
+  word-spacing: 15px;
+  font-style: italic;
+}
+
+.big-first-letter-text {
+  color: red;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.up-ref > a {
+  color: yellow;
+  text-decoration: underline;
+  padding-bottom: 30px;
+}
+
+.note {
+  margin: 5% 10% 0% 10%;
+}
+
+.beauty-ref {
+  display: block;
+  width: 115px;
+  margin: auto;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+.beauty-ref:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  transform: scaleX(0);
+  transition: all 0.2s;
+}
+
+.beauty-ref:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: red;
+  transform: scaleX(0);
+  transition: all 0.2s;
+}
+
+.beauty-ref:hover:before {
+	transform: scaleX(1);
+}
+
+.beauty-ref:hover:after {
+	transform: scaleX(1);
+}
+
+.up-ref {
+  text-align:center;
+  margin: 100px;
+}

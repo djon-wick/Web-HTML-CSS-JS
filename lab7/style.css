@@ -1,0 +1,18 @@
+#stiilb
+{
+    width: 100%;
+}
+
+div
+{
+    display: inline-flexbox;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid green;
+    background-color: pink;
+}
+
+div p
+{
+    margin: 5px 30px;
+}
